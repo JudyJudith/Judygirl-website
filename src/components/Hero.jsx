@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section
@@ -43,20 +43,20 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
 
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex h-11.25 items-center justify-center gap-2 rounded-sm bg-[#DDB873] px-7 text-[11px] font-semibold text-[#3D2917] transition hover:-translate-y-1 hover:bg-[#E7C88D]"
             >
               Order Now
               →
-            </a>
+            </Link>
 
-            <a
-              href="/menu"
+            <Link
+              to="/menu"
               className="inline-flex h-11.25 items-center justify-center rounded-sm border border-white/60 px-7 text-[11px] font-medium text-white transition hover:bg-white/10"
             >
               Explore Menu
-            </a>
+            </Link>
 
           </div>
         </div>
